@@ -28,4 +28,19 @@ public class TemplateTest {
         map.addAttribute("user",user);
         return "freemarker/free";
     }
+
+
+    /**
+     * 测试异常捕获
+     * @param map
+     * @return
+     */
+    @RequestMapping(value = "/testError")
+    public String testError(ModelMap map){
+        User user=new User();
+        user.setName("wu");
+        user.setBirth(new Date());
+        map.addAttribute("user",user);
+        return "thymeleaf/thym1";
+    }
 }
