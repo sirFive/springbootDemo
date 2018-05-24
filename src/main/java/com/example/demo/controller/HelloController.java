@@ -20,7 +20,7 @@ public class HelloController {
     @RequestMapping(value = "/user")
     public User getUser(){
         User u=new User();
-        u.setName("xie");
+        u.setName("xie1");
         u.setAge(24);
         u.setBirth(new Date());
         return u;
