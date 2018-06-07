@@ -83,15 +83,14 @@ public class meituan4 {
             mustList=kList;
             unList=ukList;
         }
-
-        for(Integer must:mustList){
-            System.out.println(1);
-        }
-        for(Integer pro:proList){
-            System.out.println(3);
-        }
-        for(Integer un:unList){
-            System.out.println(2);
+        for(int key :numberMap.keySet()){
+            if(mustList.contains(key)){
+                System.out.println(1);
+            } else if (proList.contains(key)){
+                System.out.println(3);
+            }else if(unList.contains(key)){
+                System.out.println(2);
+            }
         }
 
     }
